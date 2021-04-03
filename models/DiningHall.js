@@ -1,3 +1,7 @@
+// Dining Hall Table
+// pairs with import statement in index.js
+// this collects, transfers, and normalizes all Dining Hall database management
+
 export default (database, DataTypes) => {
   const DiningHall = database.define(
     "Dining_Hall",

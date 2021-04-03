@@ -1,3 +1,5 @@
+// all API routes listed in here
+
 /* eslint-disable no-console */
 import express from "express";
 import sequelize from "sequelize";
@@ -21,6 +23,8 @@ router.get("/dining", async (req, res) => {
   }
 });
 
+// findAll() methods come in from ORM on the models, which restrict what we can do with them
+// example: you cannot make a hall_name a number
 router.get("/dining/:hall_id", async (req, res) => {
   try {
     const hall = await db.DiningHall.findAll({

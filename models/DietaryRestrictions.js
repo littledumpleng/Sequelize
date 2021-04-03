@@ -1,3 +1,7 @@
+// Dietary Restrictions Table
+// pairs with import statement in index.js
+// this collects, transfers, and normalizes all Dietary Restrictions database management
+
 export default (sequelize, DataTypes) => {
   const DietaryRestrictions = sequelize.define(
     "Dietary_Restrictions",

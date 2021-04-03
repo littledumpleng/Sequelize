@@ -1,38 +1,42 @@
+// Macros Table
+// pairs with import statement in index.js
+// this collects, transfers, and normalizes all Macros database management
+
 export default (sequelize, DataTypes) => {
   const Macros = sequelize.define(
-    'Macros',
+    "Macros",
     {
       macro_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         unique: true,
-        primaryKey: true
+        primaryKey: true,
       },
       calories: {
-        type: DataTypes.DOUBLE
+        type: DataTypes.DOUBLE,
       },
       serving_size: {
-        type: DataTypes.DOUBLE
+        type: DataTypes.DOUBLE,
       },
       cholesterol: {
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
       },
       sodium: {
-        type: DataTypes.DOUBLE
+        type: DataTypes.DOUBLE,
       },
       carbs: {
-        type: DataTypes.DOUBLE
+        type: DataTypes.DOUBLE,
       },
       protein: {
-        type: DataTypes.DOUBLE
+        type: DataTypes.DOUBLE,
       },
       meal_id: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
       },
       fat: {
-        type: DataTypes.DOUBLE
-      }
+        type: DataTypes.DOUBLE,
+      },
     },
     { freezeTableName: true, timestamps: false }
   );
