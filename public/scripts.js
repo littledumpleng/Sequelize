@@ -12,10 +12,12 @@ async function windowActions() {
         <td>${hall.hall_id}</td>
         <td>${hall.hall_name}</td>  
         <td>${hall.hall_address}</td>`;
-    diningTable.append(hallInfo); // adds hallInfo tr to diningTable
+    diningTable.append(hallInfo); // add hallInfo tr to diningTable
   });
 }
 window.onload = windowActions;
 
 // ${} is string formatting
 // innerHTML gets or sets HTML within an element
+
+//   const diningTable = document.querySelector("#target");
