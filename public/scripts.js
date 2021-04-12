@@ -1,9 +1,9 @@
 // async pauses windowActions() until the await promise fulfills
 async function windowActions() {
-  console.log("window loaded");
+  console.log("data request");
   // const endpoint =
-  const request = await fetch("/api/dining/");
-  const diningData = await request.json();
+  const diningRequest = await fetch("/api/dining/");
+  const diningData = await diningRequest.json();
   const diningTable = document.getElementById("table");
 
   diningData.data.forEach((hall) => {
